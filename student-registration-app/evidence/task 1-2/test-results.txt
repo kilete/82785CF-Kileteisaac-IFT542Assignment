@@ -1,0 +1,19 @@
+
+============================================================
+ TEST RESULTS
+============================================================
+[PASS] Setup: registration page loads with CSRF token
+[PASS] Setup: throwaway test account registers successfully
+[PASS] Valid login redirects (302) to dashboard - HTTP 302
+[PASS] Dashboard accessible after valid login
+[PASS] Wrong password shows generic "Invalid email or password" error
+[PASS] Non-existent account shows the SAME generic error (no user enumeration)
+[PASS] Classic SQLi payload does not bypass login
+[PASS] No session was created by the SQLi attempt (dashboard redirects away)
+[PASS] Stored password is an Argon2id hash, not plaintext
+[PASS] Course registration without CSRF token is rejected (403)
+[PASS] Student session gets 403 on admin panel
+[PASS] Account is locked after 5 failed attempts (correct password still rejected)
+------------------------------------------------------------
+Total: 12  Passed: 12  Failed: 0
+============================================================
